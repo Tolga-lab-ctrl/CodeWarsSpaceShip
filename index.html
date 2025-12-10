@@ -1,106 +1,103 @@
 <!DOCTYPE html>
 <html lang="en" data-bs-theme="dark">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Control Panel</title>
-    <link rel="stylesheet" href="Styles/style.css" />
-    <!--BOOTSTRAP CSS-->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
-      crossorigin="anonymous"
-    />
-  </head>
-  <body>
-    <!--NAVBAR-->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Control Panel</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNavDropdown"
-          aria-controls="navbarNavDropdown"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Панел</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Навигация</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Сензори</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Още
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">1.НЕЩО</a></li>
-                <li><a class="dropdown-item" href="#">2.НЕЩО</a></li>
-              </ul>
-            </li>
-          </ul>
-        </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Control Panel</title>
+  <link rel="stylesheet" href="Styles/style.css" />
+  <!--BOOTSTRAP CSS-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+</head>
+
+<body>
+  <!--NAVBAR-->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">Control Panel</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Панел</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Навигация</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Сензори</a>
+          </li>
+        </ul>
       </div>
-    </nav>
-    <!--CONTROL PANEL-->
-    <div class="container text-center my-5">
-      <div class="row">
-        <div class="card col text-bg-dark rounded-4 mx-3">
-          <div class="card-body">
-            <h3 class="card-title">Височина</h3>
-            <p class="card-text">184 396 м</p>
+    </div>
+  </nav>
+  <!--CONTROL PANEL-->
+  <div class="container text-center my-5">
+    <!--FIRST ROW-->
+    <div class="row">
+      <div class="card col rounded-4 mx-3 custom-dark-bg">
+        <div class="card-body">
+          <h3 class="card-title">Височина</h3>
+          <div class="card">
+            <div class="card-body">
+              <p class="card-text" style="font-size: 350%;">184 396 м</p>
+            </div>
           </div>
         </div>
-        <div class="card col text-bg-dark rounded-4 mx-3">
-          <div class="card-body">
-            <h3 class="card-title">GPS ПАНЕЛ</h3>
-            <div class="card text-bg-warning">
-              <div class="card-body">
-                <h5 class="card-title">WARNING:<br />Сигналът е слаб</h5>
-                <p class="card-text">-95 dBm<br /></p>
+      </div>
+      <div class="card col rounded-4 mx-3 custom-dark-bg">
+        <div class="card-body">
+          <h3 class="card-title">GPS ПАНЕЛ</h3>
+          <div class="card text-bg-dark">
+            <div class="card-body">
+              <h5 class="card-title">WARNING:<br />Сигналът е слаб</h5>
+              <div class="card text-bg-warning">
+                <p class="card-text" style="font-size: 120%;">-95 dBm<br /></p>
               </div>
             </div>
           </div>
         </div>
-        <div class="card col text-bg-dark rounded-4 mx-3">
-          <div class="card-header">Кординати</div>
+      </div>
+      <div class="card col rounded-4 mx-3 custom-dark-bg">
+        <div class="card-body">
+          <h4 class="card-title">Кординати</h4>
           <ul class="list-group list-group-flush rounded-3">
-            <li class="list-group-item text-bg-secondary">
+            <li class="list-group-item">
               Latitude: 37.4219°
             </li>
-            <li class="list-group-item text-bg-secondary">
+            <li class="list-group-item">
               Longitude: −122.0840°
             </li>
-            <li class="list-group-item text-bg-secondary">
+            <li class="list-group-item">
               Altitude: 184 396 m
             </li>
           </ul>
         </div>
       </div>
     </div>
+    <!--SECOND ROW-->
+    <div class="row mt-4 mx-1">
+      <div class="card col rounded-4 custom-dark-bg">
+        <div class="card-body">
+          <h3 class="card-title">TEST</h3>
+          <div class="card">
+            <div class="card-body">
+              <p class="card-text" style="font-size: 350%;">TEST</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-    <!--BOOTSTRAP JS-->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+  <!--BOOTSTRAP JS-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
